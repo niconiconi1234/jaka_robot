@@ -121,28 +121,29 @@ planner_configs:
     dense_delta_fraction: 0.001  # delta fraction for interface detection. default: 0.001
     max_failures: 5000  # maximum consecutive failure limit. default: 5000
 jaka_zu7:
-  default_planner_config: RRT
+  default_planner_config: PRMstar
   planner_configs:
-    - SBL
-    - EST
-    - LBKPIECE
-    - BKPIECE
-    - KPIECE
-    - RRT
-    - RRTConnect
-    - RRTstar
-    - TRRT
-    - PRM
     - PRMstar
-    - FMT
-    - BFMT
-    - PDST
-    - STRIDE
-    - BiTRRT
-    - LBTRRT
-    - BiEST
-    - ProjEST
-    - LazyPRM
-    - LazyPRMstar
-    - SPARS
-    - SPARStwo
+    # - SBL
+    # - EST
+    # - LBKPIECE
+    # - BKPIECE
+    # - KPIECE
+    # - RRT
+    # - RRTConnect
+    # - RRTstar
+    # - TRRT
+    # - PRM
+    # - PRMstar
+    # - FMT
+    # - BFMT
+    # - PDST
+    # - STRIDE
+    # - BiTRRT
+    # - LBTRRT
+    # - BiEST
+    # - ProjEST
+    # - LazyPRM
+    # - LazyPRMstar
+    # - SPARS
+    # - SPARStwo
