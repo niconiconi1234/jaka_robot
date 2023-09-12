@@ -97,8 +97,11 @@ void goalCb(const control_msgs::FollowJointTrajectoryGoalConstPtr& torso_goal, S
         ros::Duration(1).sleep();
         check++;
     }
+
+    auto result=control_msgs::FollowJointTrajectoryResult();
+    result.error_code=control_msgs::FollowJointTrajectoryResult::INVALID_GOAL;
     
-    as->setAborted();
+    as->setAborted(result,"robot not in goal position");
     ROS_INFO("机器人未运动到目标位置");
     robot.servo_move_enable(false);
     ROS_INFO("伺服模式使能关闭");
